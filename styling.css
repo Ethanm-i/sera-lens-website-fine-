@@ -66,6 +66,7 @@ html{
 .paragraph{
     margin-top: 200px;
     margin-left: 400px;
+    line-height: 1.9;
 }
 
 .paragraph, .paragraph a{
@@ -318,12 +319,15 @@ html{
     justify-content: center;
 
 }
+
+.connect-icons img{
+    width: 30px;
+    height: 30px;
+}
 .connect-icons{
     display: flex;
-    width: 50px;
     justify-content: center;
     gap:20px;
-    margin-left: 300px;
 }
 
 .like-footer nav{
@@ -350,4 +354,45 @@ footer{
     color:#Efdc90;
     padding:32px;
     text-align: center;
+}
+
+/*Mobile version*/
+
+@media (max-width: 600px){
+    .book-button{
+        padding:12px;
+        font-size: 20px;
+        background-color: transparent;
+        transform: translate(8rem, 360px);
+    }
+
+    .paragraph{
+        margin-top: 200px;
+        margin-left: 0;
+        line-height: 1.9;
+        text-align: center;
+    }
+
+    .home-svg-images{
+        margin-top: 1px;
+        margin-left: 30px;
+        gap: 20%;
+    }
+
+    .svg-imgs img{
+        width:50px;
+    }
+
+    .svg-imgs p{
+        margin-left: -20px;
+    }
+
+    .package-containers{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .like-footer nav{
+        gap: 10px;
+    }
 }
