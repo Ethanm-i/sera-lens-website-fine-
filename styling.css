@@ -8,13 +8,14 @@ html{
 }
 
 .header-background{
-    background-image: url(Images/2.png);
     background-size: cover;
     background-position: center;
     height: 890px;
     align-items: center;
     position: relative;
     justify-content: center;
+    transition: opacity 1s ease-in-out;
+    opacity:1;
 }
 
 .div-line1, .div-line2{
