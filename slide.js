@@ -9,13 +9,13 @@ const header = document.querySelector('.header-background');
 
 function fadeToNextImage() {
     // Fade out
-    header.style.opacity = 0;
+    //header.style.opacity = 1;
 
     setTimeout(() => {
         // Change image
         header.style.backgroundImage = `url(${images[index]})`;
         // Fade in
-        header.style.opacity = 1;
+        //header.style.opacity = 4;
 
         // Next index
         index = (index + 1) % images.length;
@@ -26,4 +26,4 @@ function fadeToNextImage() {
 header.style.backgroundImage = `url(${images[0]})`;
 
 // Start slideshow every 5 seconds
-setInterval(fadeToNextImage, 5000);
+setInterval(fadeToNextImage, 6000);
