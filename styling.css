@@ -428,4 +428,36 @@ footer a{
     .like-footer nav{
         gap: 10px;
     }
+
+    footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3b441b;
+    color:#Efdc90;
+    padding:12px;
+}
+
+    .line-div{
+        width: 2px;
+        height: 20px;
+        background-color:#Efdc90;
+    }
+
+    footer .a{
+        font-size: 10px;
+        padding-left:none;
+        margin-top: 30px;
+    }
+    footer .policy{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        transform: translate(64%, -40px);
+    }
+
+    footer a{
+        color: #Efdc90;
+        text-decoration: none;
+        font-size: 8px;
+    }
 }
