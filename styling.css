@@ -350,11 +350,43 @@ html{
   background-color: #779027;
 }
 
+.line{
+    display: flex;
+    width: 900px;
+    height: 2px;
+    background-color: white;
+    transform: translate(450px, 380px);
+}
+
 footer{
-    background-color: black;
+    display: flex;
+    background-color: #3b441b;
     color:#Efdc90;
-    padding:32px;
-    text-align: center;
+    padding:12px;
+}
+
+.line-div{
+    width: 2px;
+    height: 30px;
+    background-color:#Efdc90;
+}
+
+footer .a{
+    margin-top: 6px;
+    padding-left: 108px;
+}
+footer .policy{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    transform: translateX(75rem);
+}
+
+footer a{
+    color: #Efdc90;
+    text-decoration: none;
+    font-size: 12px;
+
 }
 
 /*Mobile version*/
