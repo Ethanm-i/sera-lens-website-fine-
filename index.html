@@ -11,11 +11,37 @@
     <header class="header-background">
         <div class="navigation-menu">
             <nav>
-                <a href="#services-section">SERVICES</a>
-                <div class="div-line1"></div>
-                <a href="#protfolio-section"> PORTFOLIO </a>
-                <div class="div-line2"></div>
-                <a href="#aboutus-section">ABOUT US</a>
+                <ul class="nav">
+                    <a class="hide-me" href="#services-section">SERVICES</a>
+                    <div class="div-line1 hide-me"></div>
+                    <a class="hide-me" href="#protfolio-section"> PORTFOLIO </a>
+                    <div class="div-line2 hide-me"></div>
+                    <a class="hide-me" href="#aboutus-section">ABOUT US</a>
+                </ul>
+
+                <ul class="side-b">
+                    <a class="menu-button" onclick=showSidebar() href="#"><img src="Images/open-M.svg"></a>
+                </ul>
+
+                <ul class="side-bar">
+                    <img onclick=hideSidebar() src="Images/close-M.svg">
+                    <a href="#services-section">SERVICES</a>
+                    <a href="#protfolio-section"> PORTFOLIO </a>
+                    <a href="#aboutus-section">ABOUT US</a>
+                </ul>
+
+                <script>
+                    function showSidebar(){
+                        const sidebar=document.querySelector('.side-bar')
+
+                        sidebar.style.display = 'flex'
+                    }
+                    function hideSidebar(){
+                        const sidebar=document.querySelector('.side-bar')
+
+                        sidebar.style.display = 'none'
+                    }
+                </script>
             </nav>
         </div>
 
@@ -26,7 +52,7 @@
             <p>
                 highlight compellin aspects of your <a href="something"> listing </a>
                 <br> 
-                <span style="margin-left: 150px;"></span>
+                <span class="spacer"></span>
                 using crip, high resolution <a href="linktotheimages">images</a>
             </p>
         </div>
@@ -62,7 +88,21 @@
     </section>
 
     <section id="protfolio-section">
-        <a href="different-page">SEE PORTFOLIO &#8594;</a>
+        <div class="slider">
+            <div class="side-image left" id="prev-img"></div>
+            <div class="main-image" id="main-img"></div>
+            <div class="side-image right" id="next-img"></div>
+        </div>
+
+        <div class="controls">
+            <button onclick="prevImage()">&larr; </button>
+            <button onclick="nextImage()">&rarr;</button>
+        </div>
+        
+
+        <div class="portfolio-link">
+            <a href="different-page">SEE PORTFOLIO &#8594;</a>
+        </div>
     </section>
 
     <section id="services-section">
@@ -123,7 +163,6 @@
     </section>
 
     <section id="aboutus-section">
-        <div class="line"></div>
         <div class="about-container">
             <h4>WE ARE...</h4>
             <p> Lovers of aesthetics. Adaptive in our creativity. Championing simplicity.</p>
@@ -139,6 +178,8 @@
             stands out and attracts the right clients. Allowing you to focus on what 
             matters - your business.
             </p>
+
+            <div class="line"></div>
 
             <div class="connect">
                 <h4>connect and engage with us</h4>
@@ -187,6 +228,7 @@
             <a href="terms-of-service"> TERMS OF SERVICE</a>
         </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

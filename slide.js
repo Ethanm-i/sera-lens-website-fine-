@@ -27,3 +27,4 @@ header.style.backgroundImage = `url(${images[0]})`;
 
 // Start slideshow every 5 seconds
 setInterval(fadeToNextImage, 6000);
+
