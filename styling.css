@@ -56,7 +56,7 @@ html{
 .side-bar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: 0px;
     height: 100vh;
     width: 250px;
     z-index: 998;
@@ -73,7 +73,7 @@ html{
 .side-bar a{
     width: 100%;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 160px;
 }
 .menu-button{
     display: none;
@@ -180,7 +180,7 @@ html{
 .side-image, .main-image{
     background-size: cover;
     background-position: center;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease ease-in-out;
 }
 
 .side-image{
@@ -492,6 +492,7 @@ footer a{
 /*Mobile version*/
 
 @media (max-width: 600px){
+
     .hide-me{
         display: none;
     }
@@ -512,6 +513,7 @@ footer a{
     .book-button{
         padding:12px;
         font-size: 20px;
+        margin-top: -40px;
         background-color: transparent;
         transform: translate(8rem, 360px);
     }
@@ -523,17 +525,25 @@ footer a{
         text-align: center;
     }
 
+    /*icons after the titles*/
+
     .home-svg-images{
-        margin-top: 1px;
-        margin-left: 30px;
-        gap: 20%;
+        margin-top: 0px;
+        margin-left: 70px;
+        gap: 70px;
+        margin-top: 40px;
+        padding:40px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 200px;
     }
 
     .svg-imgs img{
-        width:50px;
+        width:90px;
     }
 
     .svg-imgs p{
+        margin-top: 10px;
         margin-left: -20px;
     }
 
@@ -543,16 +553,26 @@ footer a{
     }
 
     .like-footer nav{
+        display: block;
         gap: 10px;
     }
 
+    .div-lin, .div-lin{
+        width: 120px;
+        height: 2px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        background-color: #779027;
+    }
+
     footer{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #3b441b;
-    color:#Efdc90;
-    padding:12px;
-}
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #3b441b;
+        color:#Efdc90;
+        padding:12px;
+    }
 
     .line-div{
         width: 2px;
@@ -589,6 +609,10 @@ footer a{
         text-align: center;
     }
 
+    .paragraph p{
+        margin-top: -90px;
+    }
+
     .paragraph .spacer{
         margin-left: 0;
     }
@@ -596,23 +620,22 @@ footer a{
     /*for the portfolio section*/
 
     .side-image{
-        width: 300px;
-        height: 100px;
+        display: none;
     }
 
     .main-image{
         width: 700px;
-        height: 240px;
+        height: 300px;
     }
 
     .controls{
-        gap: 15px;
-        margin-top: 30px;
-        transform: translate(150px, -100px);
+        gap: 300px;
+        margin-top: 40px;
+        transform: translate(2px, -40px);
     }
 
     .portfolio-link {
-        transform: translate(8px, -120px);
+        transform: translate(150px, -50px);
     }
 
     .portfolio-link a{
