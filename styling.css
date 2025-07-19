@@ -177,10 +177,21 @@ html{
     gap: 20px;
 }
 
-.side-image, .main-image{
-    background-size: cover;
-    background-position: center;
-    transition: all 0.6s ease ease-in-out;
+
+
+.side-image,
+.main-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.side-image img, .main-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:1;
+    transition: opacity 1s ease-in-out;
+    display: block;
 }
 
 .side-image{
@@ -263,6 +274,7 @@ html{
 .basic-package p{
     margin-top: 30px;
     font-size: 15px;
+    font-family: sans-serif;
     margin-left: 55px;
 }
 

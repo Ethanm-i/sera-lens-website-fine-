@@ -15,16 +15,38 @@ const imgs=[
     'IMG/14.jpg',
 ];
 
-let currentIndex =0;
+let currentIndex = 0;
+
+imgs.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+});
 
 function updateImages(){
     const mainImg  = document.getElementById('main-img');
     const prevImg  = document.getElementById('prev-img');
     const nextImg  = document.getElementById('next-img');
 
-    mainImg.style.backgroundImage = `url(${imgs[currentIndex]})`;
-    prevImg.style.backgroundImage = `url(${imgs[(currentIndex - 1 + imgs.length) %imgs.length]})`;
-    nextImg.style.backgroundImage = `url(${imgs[(currentIndex + 1) % imgs.length]})`;
+    // mainImg.style.backgroundImage = `url(${imgs[currentIndex]})`;
+    // prevImg.style.backgroundImage = `url(${imgs[(currentIndex - 1 + imgs.length) %imgs.length]})`;
+    // nextImg.style.backgroundImage = `url(${imgs[(currentIndex + 1) % imgs.length]})`;
+
+    mainImg.style.opacity=0;
+    prevImg.style.opacity = 0;
+    nextImg.style.opacity = 0;
+
+    setTimeout(() => {
+        mainImg.src = imgs[currentIndex];
+        prevImg.src = imgs[(currentIndex -1 + imgs.length) % imgs.length];
+        nextImg.src = imgs[(currentIndex + 1) % imgs.length];
+
+
+        setTimeout(() => {
+            mainImg.style.opacity = 1;
+            prevImg.style.opacity = 1;
+            nextImg.style.opacity = 1;
+        }, 50);
+    }, 100);
 }
 
 function prevImage(){
