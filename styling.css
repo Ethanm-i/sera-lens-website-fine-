@@ -80,11 +80,12 @@ html{
 }
 
 .logo-circle{
-    width: 150px;
+    width: 400px;
     height: 150px;
-    border-radius: 50%;
-    background-image: url(Images/logo.png);
-    background-size: cover;
+    background-image: url(Images/SERALENS4.0.png);
+    background-size: 370px 150px;
+    padding: 12px;
+    background-repeat: no-repeat;
     background-position: center;
     margin-top:-250px;
     margin-left: 130px;
@@ -611,8 +612,10 @@ footer a{
     }
 
     .logo-circle{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
+        background-image: url(Images/sl2.0.png);
+        background-size: cover;
         margin-top:-280px;
         margin-left: 20px;
     }
