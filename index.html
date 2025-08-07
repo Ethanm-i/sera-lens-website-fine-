@@ -12,11 +12,11 @@
         <div class="navigation-menu">
             <nav>
                 <ul class="nav">
-                    <a class="hide-me" href="#services-section">SERVICES</a>
-                    <div class="div-line1 hide-me"></div>
-                    <a class="hide-me" href="#protfolio-section"> PORTFOLIO </a>
-                    <div class="div-line2 hide-me"></div>
-                    <a class="hide-me" href="#aboutus-section">ABOUT US</a>
+                    <li><a class="hide-me" href="#services-section">SERVICES</a></li>
+                    <li><div class="div-line1 hide-me"></div></li>
+                    <li><a class="hide-me" href="#protfolio-section"> PORTFOLIO </a></li>
+                    <li><div class="div-line2 hide-me"></div></li>
+                    <li><a class="hide-me" href="#aboutus-section">ABOUT US</a></li>
                 </ul>
 
                 <ul class="side-b">
@@ -24,10 +24,10 @@
                 </ul>
 
                 <ul class="side-bar">
-                    <img onclick=hideSidebar() src="Images/close-M.svg">
-                    <a href="#services-section">SERVICES</a>
-                    <a href="#protfolio-section"> PORTFOLIO </a>
-                    <a href="#aboutus-section">ABOUT US</a>
+                    <li><img onclick=hideSidebar() src="Images/close-M.svg"></li>
+                    <li><a href="#services-section">SERVICES</a></li>
+                    <li><a href="#protfolio-section"> PORTFOLIO </a></li>
+                    <li><a href="#aboutus-section">ABOUT US</a></li>
                 </ul>
 
                 <script>
@@ -43,18 +43,19 @@
                     }
                 </script>
             </nav>
-        </div>
 
-        <div class="logo-circle"></div>
-
-        <a href="#services-section"><button class="book-button">BOOK NOW</button></a>
-        <div class="paragraph">
-            <p>
-                highlight compellin aspects of your <a href="something"> listing </a>
-                <br> 
-                <span class="spacer"></span>
-                using crip, high resolution <a href="linktotheimages">images</a>
-            </p>
+            <div class="header-flex">
+                <div class="logo-circle"></div>
+                <a href="#services-section"><button class="book-button">BOOK NOW</button></a>
+            </div>
+            <div class="paragraph">
+                <p>
+                    highlight compellin aspects of your <a href="something"> listing </a>
+                    <br> 
+                    <span class="spacer"></span>
+                    using crip, high resolution <a href="linktotheimages">images</a>
+                </p>
+            </div>
         </div>
     </header>
 
@@ -71,17 +72,17 @@
 
         <div class="home-svg-images">
             <div class="svg-imgs">
-                <img src="Images/gears.svg" alt="gears">
+                <img class="inv" src="Images/Gears.png" alt="gears">
                 <p>refined systems</p>
             </div>
 
             <div class="svg-imgs">
-                <img src="Images/target.svg" alt="target">
+                <img class="inv" src="Images/Goal.png" alt="target">
                 <p>intentional...</p>
             </div>
 
             <div class="svg-imgs">
-                <img src="Images/shaking-hands.svg" alt="shaking-hands">
+                <img class="inv" src="Images/Handshake.png" alt="shaking-hands">
                 <p>trustworthy partners</p>
             </div>
         </div>
@@ -95,13 +96,11 @@
         </div>
 
         <div class="controls">
-            <button onclick="prevImage()">&larr; </button>
-            <button onclick="nextImage()">&rarr;</button>
+            <img src="Images/GoBack.png" onclick="prevImage()"/>
+            <img src="Images/forward.png" onclick="nextImage()"/>
         </div>
-        
-
         <div class="portfolio-link">
-            <a href="different-page">SEE PORTFOLIO &#8594;</a>
+            <a href="portfolio.html">SEE PORTFOLIO &#8594;</a>
         </div>
     </section>
 
@@ -229,11 +228,7 @@
     <footer>
         <div class="a">
             <p>&copy; 2025 sera real estate photography</p>
-        </div>
-        <div class="policy">
-            <a href="privacy policy"> PRIVACY POLICY</a>
-            <div class="line-div"></div>
-            <a href="terms-of-service"> TERMS OF SERVICE</a>
+            <a>ICONS BY ICONS8</a>
         </div>
     </footer>
 
