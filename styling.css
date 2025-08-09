@@ -758,7 +758,7 @@ footer p{
         font-size: 20px;
         margin-top:40px;
         background-color: transparent;
-        transform: translate(0.5rem, 560px);
+        transform: translate(3vw, 60vh);
     }
 
     .paragraph{
@@ -840,12 +840,6 @@ footer p{
         margin-left: 10px;
     }
 
-
-    footer a{
-        color: #Efdc90;
-        text-decoration: none;
-        font-size: 8px;
-    }
 
 
     /* .logo-circle{
