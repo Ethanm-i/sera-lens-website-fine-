@@ -373,7 +373,7 @@ header{
     justify-content: center;
     gap: 50px;
     max-width: 200px;
-    transform: translate(75vw, -4vw);
+    transform: translate(75vw, -3vw);
 }
 
 .controls img{
