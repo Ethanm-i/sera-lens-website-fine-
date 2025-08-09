@@ -31,6 +31,10 @@ h2, h4, ul, button, nav, p{
     font-family: 'headings', cursive;
 }
 
+.basic-package .try{
+    font-family: 'headings', cursive;
+}
+
 h1, h3{
     font-family: 'titles', serif;
 }
@@ -79,7 +83,7 @@ header{
     align-items: center;
     display: flex;
     gap: 20px;
-    margin-top: -150px;
+    margin-top: -100px;
     font-size: 1rem;
 }
 
@@ -264,6 +268,8 @@ header{
     width: 100%;
     margin-top: 30px;
     margin-left: 160px;
+    color: black;
+    text-decoration: none;
 }
 .menu-button{
     display: none;
@@ -346,8 +352,8 @@ header{
 }
 
 .side-image{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     opacity: 0.6;
     position: relative;
     z-index: 1;
@@ -355,8 +361,8 @@ header{
 
 
 .main-image{
-    width: 1100px;
-    height: 500px;
+    width: 1000px;
+    height: 400px;
     z-index: 2;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
@@ -367,7 +373,7 @@ header{
     justify-content: center;
     gap: 50px;
     max-width: 200px;
-    transform: translate(75vw, -6vh);
+    transform: translate(75vw, -8vh);
 }
 
 .controls img{
@@ -381,6 +387,7 @@ header{
     display: flex;
     margin-left: 12vw;
     transform: translateY(-6vw);
+    font-size: 15px;
 }
 
 .portfolio-link a{
@@ -395,7 +402,7 @@ header{
     display: grid; 
     grid-template-columns: repeat(3, 250px);
     grid-template-rows: 5fr;
-    grid-column-gap: 200px;
+    grid-column-gap: 130px;
     grid-row-gap: 100px;
     align-items: center;
     justify-content: center;
@@ -419,6 +426,7 @@ header{
     text-align: left;
     margin-top: 10px;
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .basic-package p{
@@ -459,6 +467,7 @@ header{
     text-align: left;
     margin-top: 10px;
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .starter-package p{
@@ -498,6 +507,7 @@ header{
     text-align: left;
     margin-top: 10px;
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .plus-package p{
@@ -565,6 +575,7 @@ header{
     justify-content: center;
     max-width: 700px;
     color: #f5ffd3;
+    overflow: hidden;
 }
 
 .about-container h4{
@@ -573,6 +584,7 @@ header{
 
 .about-container p{
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .connect h4{
@@ -625,6 +637,7 @@ footer{
     background-color: #3b441b;
     color:#Efdc90;
     padding:12px;
+    overflow: hidden;
 }
 
 .line-div{
@@ -647,12 +660,15 @@ footer a{
     color: #Efdc90;
     text-decoration: none;
     font-size: 12px;
+    margin-bottom: 10px;
 }
 
 footer p{
     align-items: center;
     justify-content:center;
     text-align: center;
+    margin-left: -50px;
+    margin-bottom: 5px;
 }
 
 .photos{
@@ -789,10 +805,10 @@ footer p{
 
     footer{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: none;
         background-color: #3b441b;
         color:#Efdc90;
-        padding:12px;
+        padding:6px;
     }
 
     .line-div{
@@ -802,16 +818,22 @@ footer p{
     }
 
     footer .a{
-        font-size: 10px;
-        padding-left:none;
-        margin-top: 30px;
-    }
-    footer .policy{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap:10px;
-        transform: translate(64%, -40px);
+        justify-content:center;
+        text-align: center;
+        margin-top: 6px;
+        padding-left: 10px;
+        gap: 125px;
+        row-gap: 12px;
     }
+
+    footer p{
+        text-align: center;
+        margin-left: 10px;
+    }
+
 
     footer a{
         color: #Efdc90;
@@ -859,30 +881,27 @@ footer p{
         height: 300px;
     }
 
+
     .controls{
-        gap: 300px;
-        margin-top: 40px;
-        transform: translate(2px, -40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60vw;
+        max-width: 200px;
+        transform: translate(28vw, 1vh);
+    }
+
+    .controls img{
+        width: 4vw;
+        height: inherit;
+        padding: 12px;
     }
 
     .portfolio-link {
-        transform: translate(150px, -50px);
+        margin-left: 36vw;
+        transform: translateY(-4vw);
     }
 
-    .portfolio-link a{
-        margin-top: none;
-        font-size: 10px;
-        color: #a38301;
-    }
-
-    .controls button{
-        background-color: black;
-        color: #a38301;
-        border: none;
-        padding:12px;
-        font-size: 18px;
-        cursor: pointer;
-    }
 }
 
 @media (max-width: 768px) {
