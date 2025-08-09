@@ -656,11 +656,17 @@ footer .a{
     gap: 60vw;
 }
 
-footer a{
+
+footer .a-link{
     color: #Efdc90;
-    text-decoration: none;
     font-size: 12px;
+    font-family: none;
     margin-bottom: 10px;
+}
+
+.a-link a{
+    font-family: 'links', cursive;
+    color: #Efdc90;
 }
 
 footer p{
