@@ -419,7 +419,7 @@ header{
 }
 
 .basic-package:hover{
-    border: 5px solid #7b6200;
+    border-bottom: 6px solid #7b6200;
 }
 
 .basic-package ul{
@@ -460,7 +460,7 @@ header{
 }
 
 .starter-package:hover{
-    border: 5px solid #7b6200;
+    border-bottom: 6px solid #7b6200;
 }
 
 .starter-package ul{
@@ -500,7 +500,7 @@ header{
 }
 
 .plus-package:hover{
-    border: 5px solid #7b6200;
+    border-bottom: 6px solid #7b6200;
 }
 
 .plus-package ul{
@@ -557,7 +557,7 @@ header{
 }
 
 .a-la-carte:hover{
-    border: 5px solid #7b6200;
+    border-bottom: 6px solid #7b6200;
 }
 
 #aboutus-section{
@@ -609,7 +609,7 @@ header{
     display: flex;
     margin-top: 80px;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -687,21 +687,6 @@ footer p{
     align-items: center;
 }
 
-.photographer1{
-    width: 300px;
-    height:300px;
-    margin-top: 50px;
-    margin-left: 100px;
-    border-radius: 50%;
-    background-image: url(Images/2.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.photos p{
-    padding: 12px;
-    max-width: 600px;
-}
 
 .layout-container{
     background-color: black;
