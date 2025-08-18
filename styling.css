@@ -888,6 +888,10 @@ footer p{
         transform: translateY(-4vw);
     }
 
+    .layout-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (max-width: 768px) {
