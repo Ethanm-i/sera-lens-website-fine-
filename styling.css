@@ -27,6 +27,13 @@ html{
     src: url('fonts/baron_neue/Baron\ Neue\ Italic.otf');
 }
 
+@font-face {
+    font-family: "para";
+    src: url('fonts/baron_neue/montserrat.regular\ \(1\).ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h2, h4, ul, button, nav, p{
     font-family: 'headings', cursive;
 }
@@ -136,6 +143,7 @@ header{
     font-size: 1.2rem;
     margin-left: -38vw;
     line-height: 1.9;
+    font-family: 'para';
 }
 
 
@@ -748,7 +756,8 @@ footer p{
     }
 
     .paragraph{
-        margin-top: 200px;
+        margin-top: none;
+        transform: translateY(-100px);
         margin-left: 0;
         line-height: 1.9;
         text-align: center;
